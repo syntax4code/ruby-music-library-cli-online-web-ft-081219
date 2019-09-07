@@ -11,7 +11,7 @@ class Artist
     @songs = []
   end
 
-  def self.all
+  def self.all # This class variable should be accessible via the class method .all
     @@all
   end
 
@@ -20,7 +20,7 @@ class Artist
   end
 
   def save
-    self.class.all << self
+    self.class.all << self #Instances should respond to a #save method that adds the instance itself into the appropriate @@all
   end
 
   def self.create(name)
