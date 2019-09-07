@@ -12,7 +12,7 @@ class Genre
   end
 
   def self.all
-    @@all
+    @@all # returns the class variable @@all
     binding.pry
   end
 
