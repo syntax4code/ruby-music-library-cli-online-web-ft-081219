@@ -8,7 +8,7 @@ class Genre
   @@all = [] #each class should contain a class variable @@all that is set to an empty array and is prepared to store all saved instances of the class. This class variable should be accessible via the class method .all.
 
   def initialize(name) #initialize accepts a name for the new genre
-    @name = name
+    @name = name #retrieves the name of a genre
     @songs = []
   end
 
