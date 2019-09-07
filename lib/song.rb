@@ -33,7 +33,7 @@ class Song
     self.class.all << self #.all returns Song instance to the class variable @@all
   end
 
-  def self.create(name)
+  def self.create(name) #.create initializes, saves, and returns the song
     song = new(name)
     song.save
     song
