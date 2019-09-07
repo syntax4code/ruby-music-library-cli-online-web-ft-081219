@@ -28,8 +28,6 @@ class Artist
     artist.save
     artist
 
-    # Or, as a one-liner:
-    # new(name).tap{ |a| a.save }
   end
 
   def add_song(song)
