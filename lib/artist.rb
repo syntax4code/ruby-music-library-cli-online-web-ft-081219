@@ -19,7 +19,7 @@ class Artist
     all.clear
   end
 
-  def save
+  def save #save adds the Artist instance to the @@all class variable
     self.class.all << self #Instances should respond to a #save method that adds the instance itself into the appropriate @@all
   end
 
