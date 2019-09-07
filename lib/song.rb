@@ -30,7 +30,7 @@ class Song
   end
 
   def save
-    self.class.all << self #.all returns the class variable @@all
+    self.class.all << self #.all returns Song instance to the class variable @@all
   end
 
   def self.create(name)
