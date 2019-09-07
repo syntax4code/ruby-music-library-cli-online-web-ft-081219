@@ -1,25 +1,43 @@
-class Artist < Super
+class Artist
+  extend Concerns::Findable
 
-  attr_accessor :songs
+  attr_accessor :name
+  attr_reader :songs
+
+  @@all = []
 
   def initialize(name)
-		@name = name
+    @name = name
     @songs = []
-	end
+  end
+
+  def self.all
+    @@all
+  end
+
+  def self.destroy_all
+    all.clear
+  end
+
+  def save
+    self.class.all << self
+  end
 
   def self.create(name)
-		instance = Artist.new(name)
-		instance.save
-		instance
-	end
+    artist = new(name)
+    artist.save
+    artist
 
-  def genres
-    self.songs.map {|song|song.genre}.uniq
+    # Or, as a one-liner:
+    # new(name).tap{ |a| a.save }
   end
 
   def add_song(song)
-    song.artist = self if song.artist == nil
-    self.songs << song if self.songs.include?(song) == false
+    song.artist = self unless song.artist
+    songs << song unless songs.include?(song)
   end
 
+  def genres
+    songs.collect{ |s| s.genre }.uniq
+  end
 end
