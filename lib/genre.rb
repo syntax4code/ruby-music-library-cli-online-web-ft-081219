@@ -23,7 +23,7 @@ class Genre
     self.class.all << self #Instances should respond to a #save method that adds the instance itself into the appropriate @@all class variable
   end
 
-  def self.create(name)
+  def self.create(name) #all classes should implement a custom constructor .create that instantiates an instance using .new but also invokes #save on that instance, forcing it to persist immediately.
     genre = new(name)
     genre.save
     genre
