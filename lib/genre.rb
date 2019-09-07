@@ -20,7 +20,7 @@ class Genre
   end
 
   def save
-    self.class.all << self
+    self.class.all << self #Instances should respond to a #save method that adds the instance itself into the appropriate @@all class variable
   end
 
   def self.create(name)
