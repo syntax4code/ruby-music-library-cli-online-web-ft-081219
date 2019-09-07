@@ -11,11 +11,11 @@ class Artist
     @songs = []
   end
 
-  def self.all # This class variable should be accessible via the class method .all
+  def self.all #  returns the class variable @@all
     @@all
   end
 
-  def self.destroy_all #class should be able to empty its @@all array via a class method .destroy_all
+  def self.destroy_all #resets the @@all class variable to an empty array
     all.clear
   end
 
