@@ -1,6 +1,7 @@
+require 'pry'
 class Genre
   extend Concerns::Findable
-require.pry
+
   attr_accessor :name
   attr_reader :songs
 
