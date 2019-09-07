@@ -25,7 +25,7 @@ class Song
     @@all
   end
 
-  def self.destroy_all
+  def self.destroy_all #.destroy_all resets the @@all class variable to an empty array
     all.clear
   end
 
