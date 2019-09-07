@@ -4,7 +4,7 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
-  @@all = []  #each class should contain a class variable @@all that is set to an empty array and is prepared to store all saved instances of the class. 
+  @@all = []  #each class should contain a class variable @@all that is set to an empty array and is prepared to store all saved instances of the class.
 
   def initialize(name)
     @name = name
@@ -12,7 +12,7 @@ class Artist
   end
 
   def self.all
-    @@all 
+    @@all
   end
 
   def self.destroy_all #class should be able to empty its @@all array via a class method .destroy_all
