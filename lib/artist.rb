@@ -4,10 +4,10 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
-  @@all = []  #each class should contain a class variable @@all that is set to an empty array and is prepared to store all saved instances of the class.
+  @@all = []  #@@all is initialized as an empty array
 
-  def initialize(name)
-    @name = name
+  def initialize(name) ##initialize  accepts a name for the new artist
+    @name = name #retrieves the name of an artist
     @songs = []
   end
 
