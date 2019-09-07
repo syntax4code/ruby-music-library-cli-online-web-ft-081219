@@ -13,7 +13,7 @@ class Genre
 
   def self.all
     @@all # returns the class variable @@all
-    binding.pry
+  
   end
 
   def self.destroy_all #the class should be able to empty its @@all array via a class method .destroy_all
