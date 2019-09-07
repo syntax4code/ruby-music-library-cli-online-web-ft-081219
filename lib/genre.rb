@@ -11,7 +11,7 @@ class Genre
     @name = name
     @songs = []
   end
-
+binding.pry
   def self.all
     @@all
   end
