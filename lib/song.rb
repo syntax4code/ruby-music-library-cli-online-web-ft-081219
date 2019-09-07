@@ -2,11 +2,11 @@ class Song
   attr_accessor :name
   attr_reader :artist, :genre
 
-  @@all = []
+  @@all = [] # is initialized as an empty array
 
   def initialize(name, artist = nil, genre = nil)#initialize accepts a name for the new song
-    accepts a name for the new song
-    @name = name
+    
+    @name = name #retrieves the name of a song
     self.artist = artist if artist
     self.genre = genre if genre
   end
@@ -30,7 +30,7 @@ class Song
   end
 
   def save
-    self.class.all << self
+    self.class.all << self #.all returns the class variable @@all
   end
 
   def self.create(name)
