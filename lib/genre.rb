@@ -4,7 +4,7 @@ class Genre
   attr_accessor :name
   attr_reader :songs
 
-  @@all = []
+  @@all = [] #each class should contain a class variable @@all that is set to an empty array and is prepared to store all saved instances of the class. This class variable should be accessible via the class method .all.
 
   def initialize(name)
     @name = name
