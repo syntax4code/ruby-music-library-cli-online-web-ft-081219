@@ -11,7 +11,7 @@ class Artist
     @songs = [] #initialize creates a 'songs' property set to an empty array (artist has many songs)
   end
 
-  def self.all #  returns the class variable @@all
+  def self.all #  returns the class variable @@all, therefore it is a class reader
     @@all
   end
 
