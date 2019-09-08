@@ -1,7 +1,7 @@
 class MusicImporter
   attr_reader :path
 
-  def initialize(path)
+  def initialize(path)# accepts a file path to parse MP3 files from #path
     @path = path
   end
 
