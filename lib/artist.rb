@@ -4,7 +4,7 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
-  @@all = []  # @@all is initialized as an empty array
+  @@all = []  # class variable @@all is initialized as an empty array
 
   def initialize(name) ##initialize  accepts a name for the new artist
     @name = name #retrieves the name of an artist
