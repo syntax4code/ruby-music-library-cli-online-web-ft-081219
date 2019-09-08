@@ -8,6 +8,9 @@ class MusicLibraryController
   end
 
   def call
+    #list_songs
+    #prints all songs in the music library in a numbered list (alphabetized by song name)
+    #is not hard-coded
     input = ""
 
     while input != "exit"
