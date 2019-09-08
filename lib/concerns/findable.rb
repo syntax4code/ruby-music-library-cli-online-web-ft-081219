@@ -1,4 +1,4 @@
-module Concerns::Findable
+module Concerns::Findable  #defines a module named Concerns::Findable
   def find_by_name(name)
     self.all.detect{|s| s.name == name}
   end
