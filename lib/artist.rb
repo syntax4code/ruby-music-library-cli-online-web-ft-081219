@@ -1,5 +1,5 @@
 class Artist
-  extend Concerns::Findable #
+  extend Concerns::Findable #takes all the methods in the findable module and add them as class methods.
 
   attr_accessor :name
   attr_reader :songs
