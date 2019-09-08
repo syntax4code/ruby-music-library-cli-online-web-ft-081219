@@ -8,7 +8,7 @@ class Genre
   @@all = [] #@@all is initialized as an empty array
   def initialize(name) #initialize accepts a name for the new genre
     @name = name #retrieves the name of a genre
-    @songs = [] #
+    @songs = [] #creates a 'songs' property set to an empty array (artist has many songs)
   end
 
   def self.all
