@@ -34,6 +34,6 @@ class Genre
   end
 
   def artists
-    songs.collect{ |s| s.artist }.uniq
+    songs.collect{ |s| s.artist }.uniq #this method allows us to identify all artists that have written songs in a particular genre
   end
 end
